@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/s" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/face" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="facebook"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/intagram" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="Số điện thoại" />
+
+                <EditText
+                    android:id="@+id/txtUserName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="Họ và Tên" />
+
+                <EditText
+                    android:id="@+id/txtPa2ssWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_below="@id/txtUserName"
+                    android:hint="Email" />
+
+                <EditText
+                    android:id="@+id/txtPas3sWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_below="@id/txtUserName"
+                    android:hint="PassWord"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/txtPassWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_below="@id/txtUserName"
+                    android:hint="Google+" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtA"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:hint="facebook" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edtA"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="12dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/aa" />
+</RelativeLayout>
